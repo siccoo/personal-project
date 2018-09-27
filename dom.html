@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<!-- <html>
+
+<head></head>
+
+<body>
+    <div>
+        The major problem we are having in nigeria are as follows:
+    </div>
+    <ul>
+        <li>
+            <i>Boko Haram</i>
+        </li>
+        <li>
+            <i>Unemployment</i>
+        </li>
+        <li>
+            <strong>Herdsman</strong>
+        </li>
+    </ul>
+    <div>
+        The End
+    </div>
+    <script>
+        for (let i = 0; i < document.body.childNodes.length; i++) {
+            alert(document.body.childNodes[i])
+        }
+    </script>
+</body>
+
+</html>
+ -->
+
+<html lang="en">
+
+<head>
+</head>
+
+<body>
+
+
+    <h1 id="heading1">My Heading</h1>
+    <p id="paragraph1">This is some text in a paragraph.</p>
+    <script>
+        alert(document.getElementById("heading1"));
+
+        // var myString = "A, B, C"
+        // var myTextArray = myString.split(" , ")
+
+        var values = prompt("Please enter a set of comma separated values.");
+
+        function splitAndReverseText(csv) {
+            var parts = csv.split(",");
+            parts.reverse();
+
+            var reversedString = parts.join(",");
+
+            alert(reversedString);
+        }
+
+        splitAndReverseText(values);
+
+        
+        var myString = "The event will be in May, the 21st of June";
+        var myCleanedUpString = myString.replace("May", "June");
+        alert(myCleanedUpString)        
+    </script>
+</body>
+
+</html>

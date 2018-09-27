@@ -1,0 +1,41 @@
+body{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    color: #ff08;
+    background-color: darkslategrey;
+    margin-right: auto;
+    padding: auto;
+    /* display: none; */
+}
+
+h1{
+    margin-left: 20px;
+}
+
+label {
+    display: inline-block;
+    font-weight: bold;
+}
+
+input[type="text"] {
+    width: 250px;
+}
+
+label[for="first"], label[for="second"] {
+    display: block;
+    width: auto;
+    }
+
+ textarea {
+        height: 100px;
+        width: 300px;
+}
+form {
+        margin-left: 80px;
+}
+
+input[type='submit']{
+    
+    height: 30px;
+    border: 0px;
+    border-radius: 3px;    
+}

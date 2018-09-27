@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        #output {
+            background: #000000;
+            color: #ffffff;
+            height: 400px;
+            border: 10px slateblue solid;
+            text-align: center;
+            margin-top: 30px;
+            padding: 20px;
+
+        }
+
+        .myspan {
+            background: seagreen;
+            color: orange;
+
+        }
+    </style>
+</head>
+
+<body>
+    <div id="output"></div>
+    <div id="divone">
+        No Nonsense
+    </div>
+    <div class="divtwo">
+        Happy New Month
+    </div>
+    <div>No Content</div>
+
+
+    <form action=""></form>
+</body>
+<script>
+    // let $ = document;
+    // let  divone = $.getElementById("divone");
+    // $.getElementById("output").textContent = `<span>${divone.textContent}</span>`
+    // $.getElementById("output").innerHTML += `<br/><span class="myspan">${divone.textContent}</span>`
+    // $.getElementById("output").textContent += `<span>${divone.textContent}</span>`
+    let $ = document;
+    let divone = $.getElementById("divone");
+    let divTwo = $.getElementsByClassName("divtwo");
+    $.getElementById("output").innerHTML = `<br/><span class="myspan">${divone.textContent}</span>`
+    $.getElementById("output").innerHTML += `<br/><span class="myspan">${divTwo[0].textContent}</span>`
+
+// // Spread operator
+// let me = [...divTwo];
+// console.log(me, divTwo)
+
+</script>
+
+</html>
